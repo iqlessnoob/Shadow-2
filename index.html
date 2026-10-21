@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+  <meta name="theme-color" content="#090b12">
+  <title>Shadowfall: 100 Floors</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="app">
+    <canvas id="game" aria-label="Shadowfall action platformer"></canvas>
+    <section id="hud" class="hud hidden">
+      <div class="hud-left">
+        <div class="stat"><span>HP</span><div class="bar"><i id="hp-fill"></i></div><b id="hp-text">100/100</b></div>
+        <div class="stat"><span>DASH</span><div class="bar dash"><i id="dash-fill"></i></div></div>
+      </div>
+      <div class="hud-right">
+        <b id="stage-label">LEVEL 1</b><span id="coins-label">◈ 0</span><span id="gems-label">◆ 0</span>
+        <button id="pause-btn" aria-label="Pause">Ⅱ</button>
+      </div>
+      <div id="boss-wrap" class="boss-wrap hidden"><span id="boss-name">ABYSSAL WARDEN</span><div class="bar"><i id="boss-fill"></i></div></div>
+    </section>
+
+    <section id="overlay" class="overlay">
+      <div class="panel">
+        <p class="eyebrow">A DARK-FANTASY ACTION PLATFORMER</p>
+        <h1 id="overlay-title">SHADOWFALL<span>: 100 FLOORS</span></h1>
+        <p id="overlay-copy">Fight through shifting biomes. Learn enemy patterns. Never stop moving.</p>
+        <div id="menu-actions" class="actions">
+          <button data-action="campaign" class="primary">PLAY CAMPAIGN</button>
+          <button data-action="infinite">INFINITE MODE</button>
+          <button data-action="shop">SHOP / ARMORY</button>
+        </div>
+        <div id="shop-panel" class="hidden"></div>
+        <div id="pause-actions" class="actions hidden">
+          <button data-action="resume" class="primary">RESUME</button>
+          <button data-action="restart">RESTART LEVEL</button>
+          <button data-action="menu">MAIN MENU</button>
+        </div>
+        <p class="footnote">Landscape recommended · Progress saves automatically on this device</p>
+      </div>
+    </section>
+
+    <nav id="touch-ui" class="touch-ui hidden" aria-label="Touch controls">
+      <div class="dpad">
+        <button data-hold="left" aria-label="Move left">◀</button>
+        <button data-hold="up" aria-label="Move up / climb">▲</button>
+        <button data-hold="down" aria-label="Crouch / drop">▼</button>
+        <button data-hold="right" aria-label="Move right">▶</button>
+      </div>
+      <div class="combat-controls">
+        <button data-hold="switch" class="small">SWAP</button>
+        <button data-hold="attack" class="attack">ATTACK</button>
+        <button data-hold="dash" class="dash-btn">DASH</button>
+        <button data-hold="jump" class="jump">JUMP</button>
+        <button data-hold="crouch" class="small">CROUCH</button>
+      </div>
+    </nav>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>

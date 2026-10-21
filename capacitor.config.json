@@ -1,0 +1,9 @@
+{
+  "appId": "com.shadowfall.game",
+  "appName": "Shadowfall",
+  "webDir": ".",
+  "bundledWebRuntime": false,
+  "server": {
+    "androidScheme": "https"
+  }
+}

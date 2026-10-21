@@ -1,0 +1,16 @@
+{
+  "name": "shadowfall-100-floors",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Dark-fantasy Canvas platform shooter wrapped with Capacitor for Android.",
+  "scripts": {
+    "build": "cap sync android"
+  },
+  "dependencies": {
+    "@capacitor/android": "^7.4.3",
+    "@capacitor/core": "^7.4.3"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^7.4.3"
+  }
+}
